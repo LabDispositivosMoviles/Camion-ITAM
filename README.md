@@ -11,4 +11,4 @@ Aplicación para alertas de los camiones que brindan servicio en el Instituto Te
 
 ### Desarrollo
 
-Esta aplicación se está desarrollando por el Laboratorio de dispositivos móviles usando Visual Studios y Xamarin. Desarrollado para iOS y Android
+Esta aplicación se está desarrollando por el Laboratorio de dispositivos móviles del Instituto Tecnlógico Auónomo de México usando Visual Studios y Xamarin. Desarrollado para iOS y Android
