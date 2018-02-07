@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Camion_ITAM"
              x:Class="Camion_ITAM.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+	<Label Text="Aplicación para el camion del ITAM" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 

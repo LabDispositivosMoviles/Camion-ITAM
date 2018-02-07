@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Camion_ITAM.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CamionITAM.iOS</AssemblyName>
+    <AssemblyName>Camion-ITAM.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -121,11 +121,11 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Camion-ITAM\Camion-ITAM.csproj">
-      <Project>{bcf02870-fcc4-4f4f-97ec-d551f0ca2048}</Project>
-      <Name>Camion-ITAM</Name>
+    <ProjectReference Include="..\Camion_ITAM\Camion_ITAM.csproj">
+      <Project>{BCE6FDBA-219E-4BB5-AB3C-B196AFA8252E}</Project>
+      <Name>Camion_ITAM</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
