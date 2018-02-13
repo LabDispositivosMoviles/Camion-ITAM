@@ -6,20 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Camion_ITAM
-{
-
-
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
+namespace Camion_ITAM{
+	public partial class MainPage : ContentPage{
+		public MainPage()		{
 			InitializeComponent();
 
-            //listaHorariosSantaTeresa.Header = new Titulo { Izquierda = "Hola", Derecha = "Adios" };
-
-            listaHorariosSantaTeresa.ItemsSource = new List<Horario>
-            {
+            listaHorariosSantaTeresa.ItemsSource = new List<Horario>{
                 new Horario { Salida = "06:55", Llegada = "07:15" },
                 new Horario { Salida = "07:50", Llegada = "08:15" },
                 new Horario { Salida = "08:50", Llegada = "09:15" },
@@ -35,8 +27,7 @@ namespace Camion_ITAM
                 new Horario { Salida = "18:45", Llegada = "19:05" }
             };
 
-            listaHorariosMetro.ItemsSource = new List<Horario>
-            {
+            listaHorariosMetro.ItemsSource = new List<Horario>{
                 new Horario { Salida = "06:20", Llegada = "06:40" },
                 new Horario { Salida = "07:20", Llegada = "07:40" },
                 new Horario { Salida = "08:20", Llegada = "08:40" },
@@ -53,21 +44,8 @@ namespace Camion_ITAM
                 new Horario { Salida = "19:20", Llegada = "19:40" },
                 new Horario { Salida = "20:30", Llegada = "20:40" },
                 new Horario { Salida = "21:20", Llegada = "21:40" },
-                new Horario { Salida = "*22:10", Llegada = "" },
-
-
-
-
-
-
-
-
-
-
-
-
+                new Horario { Salida = "  22:10*", Llegada = "" }      //Se deberian de darle un spacing a la izquierda de una forma más elegante
             };
-
 
         }
 	}
