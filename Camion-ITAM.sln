@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camion-ITAM.Android", "Cami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camion-ITAM.iOS", "Camion-ITAM\Camion-ITAM.iOS\Camion-ITAM.iOS.csproj", "{F8C78883-7A69-4B9C-B294-206B59E78508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camion-ITAM", "Camion-ITAM\Camion-ITAM\Camion-ITAM.csproj", "{BCF02870-FCC4-4F4F-97EC-D551F0CA2048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Camion-ITAM", "Camion-ITAM\Camion-ITAM\Camion-ITAM.csproj", "{BCF02870-FCC4-4F4F-97EC-D551F0CA2048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

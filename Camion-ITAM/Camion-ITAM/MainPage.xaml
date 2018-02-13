@@ -4,8 +4,57 @@
              xmlns:local="clr-namespace:Camion_ITAM"
              x:Class="Camion_ITAM.MainPage">
 
-	<Label Text="Aplicación para el camion del ITAM" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Orientation="Vertical">
+        <ListView x:Name="listaHorariosSantaTeresa" SeparatorColor="Green" HasUnevenRows="True" IsEnabled="False" ItemsSource="{Binding Horarios}">
+            <ListView.Header>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Fill" BackgroundColor="Green">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label  Text="Sale de Río Hondo" FontAttributes="Bold" TextColor="White" BackgroundColor="Green"/>
+                        <Label  Text="Sale de Santa Teresa" FontAttributes="Bold" TextColor="White" BackgroundColor="Green"/>
+                    </StackLayout>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="20">
+                        <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Label Text="{Binding Salida}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding Llegada}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
+
+        <ListView x:Name="listaHorariosMetro" SeparatorColor="Green" HasUnevenRows="True" IsEnabled="True" ItemsSource="{Binding Horarios2}">
+            <ListView.Header>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Fill" BackgroundColor="Green">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label  Text="Sale de Río Hondo" FontAttributes="Bold" TextColor="White" BackgroundColor="Green"/>
+                        <Label  Text="Sale del metro" FontAttributes="Bold" TextColor="White" BackgroundColor="Green"/>
+                    </StackLayout>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.Footer>
+                <StackLayout>
+                    <Label Text="*Solo de lunes a jueves y únicamente al Metro Miguel Angel de Quevedo"/>
+                </StackLayout>
+            </ListView.Footer>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="20">
+                        <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Label Text="{Binding Salida}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding Llegada}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+
+        
+
+    </StackLayout>
 </ContentPage>
