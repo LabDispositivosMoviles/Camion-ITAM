@@ -6,7 +6,7 @@ Aplicación para los camiones que brindan servicio en el Instituto Tecnológico 
 
 + Lista de los horarios para las distintas rutas que se ofrecen
 
-###Características planeadas
+### Características planeadas
 
 + Alarmas y notificaciones emergentes para recordar horario de partida del camión
 + Localización del camión en tiempo real o hacer una aproximación
